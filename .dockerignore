@@ -1,0 +1,13 @@
+.git
+.github
+.env
+.env.*
+node_modules
+.next
+__pycache__
+*.pyc
+*.pyo
+venv
+.venv
+db.sqlite3
+nginx/certs
