@@ -1,8 +1,7 @@
 # Semana 5 - Containerizacao e CI/CD
 
 ## 1. Identificacao
-- **Equipe:** Gustavo Resende
-- **Integrantes:** Gustavo Resende Marques (<gugarmq@gmail.com>)
+- **Equipe:** Gustavo da Rocha Machado Quirino
 - **Repositorio:** [https://github.com/Gustavormq/semana5-cicd-app](https://github.com/Gustavormq/semana5-cicd-app)
 - **Descricao:** Projeto de operacionalizacao e modernizacao de uma aplicacao desacoplada full-stack composta por **Django** (backend), **Next.js App Router** (frontend), **PostgreSQL 16** (banco de dados) e **Nginx** (reverse proxy com SSL/HTTPS). A solucao contempla conteinerizacao de desenvolvimento com hot-reload, orquestracao com Docker Compose, esteira automatizada de CI com Fail-Fast no GitHub Actions, imagens de producao otimizadas (multi-stage, standalone, non-root, < 150 MB) e publicacao continua (CD) no GitHub Container Registry (GHCR).
 
