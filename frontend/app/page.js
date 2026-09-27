@@ -7,7 +7,7 @@ async function getHealth() {
       return { status: 'error', items: ['Falha na resposta da API'] };
     }
     return await res.json();
-  } catch (error) {
+  } catch {
     return {
       status: 'waiting',
       items: ['Aguardando conexao com o backend...']
