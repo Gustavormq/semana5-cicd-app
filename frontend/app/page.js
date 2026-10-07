@@ -89,7 +89,7 @@ export default function Home() {
 
   return (
     <main style={{ padding: '2rem', fontFamily: 'system-ui, -apple-system, sans-serif', maxWidth: 640, margin: '0 auto', color: '#0f172a' }}>
-      <h1 style={{ color: '#0f172a' }}>Desafio CI/CD - PSPD / AILAB Makers</h1>
+      <h1 style={{ color: '#f1f1f1' }}>Desafio CI/CD - Versao B / AILAB Makers</h1>
       <p style={{ color: '#475569' }}>Semana 6 · Do Container à Nuvem (GCP & Firebase)</p>
 
       <section style={{ marginTop: '1.5rem', padding: '1.5rem', border: '1px solid #cbd5e1', borderRadius: '8px', background: '#ffffff', color: '#1e293b' }}>
@@ -100,8 +100,8 @@ export default function Home() {
               {data.status === 'ok' ? 'Online (ok)' : data.status === 'unavailable' ? 'Dados Indisponíveis' : 'Carregando...'}
             </span>
           </h2>
-          <span style={{ fontSize: '0.85rem', background: '#e0e7ff', color: '#3730a3', padding: '0.2rem 0.6rem', borderRadius: '999px', fontWeight: 'bold' }}>
-            Fonte: {data.source.toUpperCase()}
+          <span style={{ fontSize: '0.85rem', background: '#dcfce7', color: '#15803d', padding: '0.2rem 0.6rem', borderRadius: '999px', fontWeight: 'bold' }}>
+            Fonte: {data.source.toUpperCase()} ✓
           </span>
         </div>
 
