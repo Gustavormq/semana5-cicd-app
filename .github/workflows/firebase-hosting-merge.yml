@@ -1,0 +1,38 @@
+name: Deploy to Firebase Hosting on merge
+'on':
+  push:
+    branches:
+      - main
+permissions:
+  checks: write
+  contents: read
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies & Build
+        run: |
+          cd frontend
+          npm ci --legacy-peer-deps
+          npm run build
+        env:
+          STATIC_EXPORT: 'true'
+          NEXT_PUBLIC_USE_EMULATOR: 'false'
+
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PROJETOOGUS }}'
+          channelId: live
+          projectId: projetoogus
+
+      - name: Smoke Test (Teste de Fumaça)
+        run: |
+          curl --fail https://projetoogus.web.app

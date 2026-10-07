@@ -1,0 +1,10 @@
+[33m51db1e2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m feat(etapa-3): configuracao do emulator suite dados semente e regras firestore
+[33m9c9e4a0[m feat(etapa-2): suporte a static export condicional e deploy no firebase hosting
+[33m9bed4bd[m feat(etapa-1): configuracao inicial do projeto firebase spark e cli
+[33m54daa5d[m atualizacao DOCUMENTACAO.md
+[33m8fba668[m docs: documentacao tecnica completa da entrega semana 5
+[33m1802f62[m fix: ensure npm ci uses legacy-peer-deps on frontend ci
+[33me7614f9[m feat: etapa 6 deploy continuo no ghcr com github actions
+[33m6ab3696[m feat: etapa 5 stack de producao com nginx reverse proxy e ssl
+[33m98f6746[m feat: etapa 4 containers otimizados de producao multi-stage e non-root
+[33m633eeea[m feat: etapa 3 pipeline de ci com github actions e fail-fast
